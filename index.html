@@ -10,7 +10,7 @@
 
   <body>
     <div ng-controller="TodoController" class="container">
-      <h2> Todos </h2>
+      <h2>Total todos: {{ getTotalTodos() }} </h2>
       <ul class="list-unstyled">
         <li ng-repeat="todo in todos">
           <input type="checkbox" ng-model="todo.done">
